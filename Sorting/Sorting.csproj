@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{530EBC93-8759-451C-B7F4-5AA4C9C4B5A1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MonkeySort</RootNamespace>
-    <AssemblyName>MonkeySort</AssemblyName>
+    <RootNamespace>JustForFun.Sorting</RootNamespace>
+    <AssemblyName>Sorting</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

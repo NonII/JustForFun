@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MonkeySort
+namespace JustForFun.Sorting
 {
     public class MonkeySort<T>
     {
