@@ -2,16 +2,16 @@
 
 namespace JustForFun.Sorting
 {
-    public class MonkeySort<T>
+    public class MonkeySort<T> : ISort<T>
     {
-        private readonly Func<T, T, bool> judge;
-
         public MonkeySort(Func<T, T, bool> judge_func)
         {
-            judge = judge_func;
+            Judge = judge_func;
         }
 
-        public void Sort(ref T[] data)
+        public Func<T, T, bool> Judge { get; set; }
+
+        public void Sort(T[] data)
         {
             if (data == null) {
                 throw new ArgumentNullException();
@@ -33,7 +33,7 @@ namespace JustForFun.Sorting
             }
 
             for (var i = 1; i < data.Length; i++) {
-                if (judge(data[i - 1], data[i]) == false) {
+                if (Judge(data[i - 1], data[i]) == false) {
                     return false;
                 }
             }

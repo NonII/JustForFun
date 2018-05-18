@@ -16,8 +16,8 @@ namespace JustForFun.Sorting
             data.ToList().ForEach(di => Console.Write(di + ", "));
             Console.WriteLine();
 
-            var sort = new MonkeySort<int>((x, y) => x <= y);
-            sort.Sort(ref data);
+            ISort<int> sort = new MonkeySort<int>((x, y) => x <= y);
+            sort.Sort(data);
 
             data.ToList().ForEach(di => Console.Write(di + ", "));
 
